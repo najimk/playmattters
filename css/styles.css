@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Poppins:wght@100;200;300;400&display=swap");
+/**
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+	--blue-color: #1b6bea;
+	--orange-color: #ff5300;
+	--green-color: #0fe88a;
+	--educator-bg: #ff8757;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f9fafb;
+	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+/* Mobile styles */
+#wrapper {
+	margin: 10px;
+}
+
+.navbar {
+	background-color: var(--blue-color);
+	color: #ffffff;
+}
+
+.navbar-light .navbar-brand img {
+	width: 60%;
+}
+
+.navbar-light .navbar-toggler {
+	border: 0px;
+}
+
+#educator {
+	background-color: var(--educator-bg);
+}
+
+#educator .wrap {
+	background: url(../images/plants-border.svg) no-repeat;
+	background-position: bottom;
+	background-size: contain;
+}
+
+@media only screen and (min-width: 768px) {
+	/* Desktop styles */
+	#wrapper {
+		max-width: 1180px;
+		margin: 10px auto;
+	}
+}
