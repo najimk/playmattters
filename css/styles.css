@@ -7,8 +7,14 @@
 :root {
 	--blue-color: #1b6bea;
 	--orange-color: #ff5300;
-	--green-color: #0fe88a;
+	--light-green-color: #0fe88a;
+	--yellow-color: #dea813;
 	--educator-bg: #ff8757;
+	--gray-backgound: #c3c3c3;
+	--light-gray-background: #f2f2f2;
+	--dark-blue: #003187;
+	--dark-green: #004729;
+	--green-color: #00894f;
 }
 
 * {
@@ -16,15 +22,16 @@
 }
 
 body {
-	background-color: #f9fafb;
 	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
 	margin: 0;
 }
+
 /* Mobile styles */
-#wrapper {
+/* #wrapper {
 	margin: 10px;
-}
+	border: 10px solid #ffffff;
+} */
 
 .navbar {
 	background-color: var(--blue-color);
@@ -32,7 +39,7 @@ body {
 }
 
 .navbar-light .navbar-brand img {
-	width: 60%;
+	/* width: 60%;*/
 }
 
 .navbar-light .navbar-toggler {
@@ -49,10 +56,103 @@ body {
 	background-size: contain;
 }
 
+#latest-stories {
+	background-color: var(--gray-backgound);
+}
+
+#upcoming-events {
+	background-color: var(--light-gray-background);
+}
+
+#blue-region {
+	background-color: var(--blue-color);
+}
+
+#blue-region span {
+	color: var(--yellow-color);
+}
+
+#orange-region {
+	background-color: var(--orange-color);
+}
+
+.community a {
+	border: 1px solid #fff;
+	border-radius: 20px;
+	width: 32px;
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	margin: 0px 5px;
+}
+
+.community a:hover {
+	background-color: var(--light-green-color);
+}
+
+.circle {
+	background-color: var(--orange-color);
+	color: #ffffff;
+	border-radius: 50%;
+	padding: 4%;
+	min-height: 28rem;
+}
+
+.signup {
+	background-color: var(--dark-blue);
+	padding: 60px 30px;
+}
+
+.signup input {
+	border-radius: 0;
+}
+
+.signup button {
+	background-color: var(--yellow-color);
+	font-weight: bold;
+	color: #fff;
+	border: 0px;
+	border-radius: 0;
+}
+
+footer {
+	border-bottom: 10px solid var(--orange-color);
+}
+
+footer .copyright {
+	border-top: 1px solid var(--blue-color);
+}
+
+footer h4 {
+	color: var(--dark-green);
+	font-weight: 600;
+}
+
+footer h6 {
+	color: var(--green-color);
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+footer p {
+	margin: 0 0 4px;
+}
+
+footer p > span {
+	margin-right: 5px;
+}
+
+.back-to-top {
+	right: 0px;
+	bottom: 15px;
+}
+
 @media only screen and (min-width: 768px) {
 	/* Desktop styles */
-	#wrapper {
+	/* #wrapper {
 		max-width: 1180px;
-		margin: 10px auto;
-	}
+	} */
 }
