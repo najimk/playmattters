@@ -15,22 +15,19 @@
 <body>
 
 
-	<div id="wrapper" class="container">
-		<div class="top">
-			<div class="d-none d-sm-flex  col-sm-6 col-md-4">
-				<form class="d-lg-flex">
-					<div class="input-group-underlined input-group">
-						<input type="text" placeholder="Search" aria-label="Search"
-							class="form-control-underlined pl-3 form-control">
-						<div class="ml-0 input-group-append">
-							<button class="btn btn-underlined">
+	<div id="wrapper">
+		<div class="top my-2">
+			<div class="d-none d-sm-flex justify-content-end">
 
-							</button>
-						</div>
+				<form>
+					<div class="form-group has-search">
+						<span class="fa fa-search form-control-feedback"></span>
+						<input type="text" class="form-control" placeholder="Start typing to search">
 					</div>
 				</form>
 
-				<div class="border-right px-3 dropdown">
+				<div class="dropdown">
+					<i class="fas fa-globe"></i>
 					<a href="#" id="langsDropdown" aria-haspopup="true" class="topbar-link dropdown-toggle"
 						aria-expanded="false">English</a>
 					<div tabindex="-1" role="menu" aria-labelledby="langsDropdown" aria-hidden="true"
@@ -44,9 +41,9 @@
 		</div>
 
 		<!--Navigation-->
-		<div class="">
-			<nav class="navbar navbar-expand-lg navbar-light text-white px-2 px-lg-5">
-				<a class="navbar-brand" href="#">
+		<div id="branding">
+			<nav class="navbar navbar-expand-lg navbar-light text-white px-2 px-lg-5 navbar-fixed">
+				<a class="navbar-brand" href="index.html">
 					<img src="images/site-logo.svg" alt="Playmatters" class="img-fluid" />
 				</a>
 
@@ -79,7 +76,7 @@
 
 		<!--The slideshow section -->
 		<section>
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img src="images/slide 1.png" class="d-block w-100" alt="...">
@@ -88,25 +85,33 @@
 						<img src="images/slide-2.png" class="d-block w-100" alt="...">
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
+
+
 		</section>
 
 		<!-- Educator section -->
-		<section id="educator">
-			<div class="wrap d-sm-flex p-2 py-5 p-md-5 text-center align-items-center justify-content-between">
+		<section id="educator" class="p-2 py-5 p-md-5 text-center align-items-center ">
+			<div id="grid" class="wrap">
 
-				<div class="h2 circle">Reaching learners through the people and spaces
-					that surround them </div>
+				<div class="title">
+					<h2 class="reach">
+						Reaching learners through the people and spaces
+						that surround them
+					</h2>
+				</div>
 
-				<div class="educ-items">
+				<div class="educ-items container">
 					<div class="educ-item">
 						<h3 class="text-md-start"><span><img src="images/educators.svg" alt="educator"></span> Educator </h3>
 						<p>we are primarily working with teachers, facilitators and other educators in promoting intergration of
@@ -116,7 +121,8 @@
 					</div>
 
 					<div class="educ-item bg-yellow">
-						<h3 class="text-md-start"><span><img src="images/caregivers.svg" alt="caregiver"></span> Caregivers </h3>
+						<h3 class="text-md-start text-white"><span><img src="images/caregivers.svg" alt="caregiver"></span>
+							Caregivers </h3>
 						<p>We are working with parents and other caregivers to transform everyday interactions with children into
 							learning opportunities</p>
 					</div>
@@ -138,12 +144,16 @@
 
 		<!-- latest stories -->
 		<section id="latest-stories">
-			<div class="d-sm-flex p-2 py-5 p-md-5">
-				<div class="h2 circle d-flex align-content-center">Catchup with our latest stories</div>
-				<div class="news-teaser m-2 mt-4">
-					<div class="card">
+			<div id="grid-left" class="content">
+				<div class="order-md-2 title">
+					<h2>Catchup with our latest stories</h2>
+				</div>
+
+
+				<div class="news-teaser m-2 mt-4 order-md-1">
+					<div class="card rounded-0">
 						<img src="images/story-1.png" class="card-img-top" alt="story one">
-						<div class="card-body">
+						<div class="card-body cb-gradient">
 							<h5 class="card-title">How PlayMatters is helping refugee childred cop with waves of disruptions in Uganda
 							</h5>
 							<p class="card-text">In 2018, an eruption of deadly gunshots and violence meant that mary (center) and her
@@ -152,39 +162,39 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
-
-
 		</section>
-		<!--Upcoming events -->
-		<section id="upcoming-events">
 
-			<div class="g">
-				<div class="g">
+		<!--Upcoming events -->
+		<section id="upcoming-events" class="p-2 py-5 p-md-5">
+
+			<div id="grid" class="">
+				<div class="title">
 					<h2>Upcoming Events</h2>
 				</div>
 
-				<div class="event-teaser g-col-6">
-					<div class="card">
+				<div class="event-teaser">
+					<div class="card rounded-0 mb-3">
 						<img src="images/event-1.png" class="card-img-top" alt="event one">
-						<div class="card-body">
+						<div class="card-body cb-gradient text-white">
 							<div class="meta-info">
-								<span class="date">Aug 11, 2021</span>
+								<span class="date"> <i class="far fa-calendar"></i> Aug 11, 2021</span>
 								<span class="location">Entebbe Uganda</span>
 							</div>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-							<a href="#">Read More</a>
+							<h5 class="card-title yellow">Lorem ipsum dolor sit amet consectetur.</h5>
+							<a href="#" class="btn">Read More</a>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card mb-3">
 						<img src="images/event-2.png" class="card-img-top" alt="event two">
-						<div class="card-body">
+						<div class="card-body cb-gradient text-white">
 							<div class="meta-info">
-								<span class="date">Jul 03, 2021</span>
+								<span class="date"> <i class="far fa-calendar"></i> Jul 03, 2021</span>
 								<span class="location">Addis Ababa Ethiopia</span>
 							</div>
-							<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-							<a href="#">Read More</a>
+							<h5 class="card-title yellow">Lorem ipsum dolor sit amet consectetur.</h5>
+							<a href="#" class="btn">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -195,7 +205,7 @@
 		<!-- subscribe signup -->
 		<section id="blue-region">
 			<div class="container py-5">
-				<div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-5 py-md-3 mx-md-4 justify-content-center align-items-center">
+				<div class="row row-cols-1 row-cols-lg-2 g-2 py-md-3 mx-md-5 justify-content-center align-items-center">
 					<div class="col signup text-light">
 						<p class="h3">
 							Want to receive regular updates from us?
@@ -254,11 +264,11 @@
 
 		</section>
 
-		<footer class="mb-5">
+		<footer class="mb-3">
 			<!-- footer menu-->
 			<section class="my-3 my-md-4">
 				<div class="container">
-					<div class="row">
+					<div class="row mx-md-4">
 						<div class="col-md-3 align-self-center">
 							<img src="images/footer-logo.svg" alt="playmatter" class="img-fluid">
 						</div>
@@ -287,7 +297,7 @@
 				</div>
 			</section>
 			<!-- partner logos-->
-			<section class="my-4">
+			<section class="my-4 mx-md-5">
 				<h5 class="text-center my-2 my-md-4 fw-bold pb-4 pb-sm-0">In parthership with</h5>
 				<div class="partner-wrap d-md-flex justify-content-between">
 					<img src="images/IRC.png" alt="international rescue committe" class="img-fluid m-2 m-md-0" />
@@ -300,7 +310,7 @@
 
 			</section>
 			<!-- copyright -->
-			<section class="copyright text-center py-4 mt-5 position-relative">
+			<section class="copyright text-center py-4 mt-5 position-relative mx-md-5">
 				<p>PlayMatters &copy; Copyright 2021, All Rights Reserved</p>
 				<a href="#" class="position-absolute back-to-top d-none d-md-inline-block">
 					<i class="fas fa-chevron-circle-up h2"></i>
@@ -310,14 +320,16 @@
 
 
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
 		integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
 		integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
 		crossorigin="anonymous"></script>
-
+	<script src="/js/app.js"></script>
 </body>
 
 </html>

@@ -9,26 +9,25 @@
 		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://kit.fontawesome.com/28ed90922b.js" crossorigin="anonymous"></script>
-	<title>Play Library - PlayMatters | Sparking lifelong learning through play</title>
+	<title>PlayMatters | Sparking lifelong learning through play</title>
 </head>
 
-<body id="page-node-play-library">
-	<div id="wrapper" class="container">
-		<div class="top">
-			<div class="d-none d-sm-flex justify-content-end col-sm-6 col-md-4">
-				<form class="d-lg-flex ml-auto mr-lg-5 mr-xl-6 my-4 my-lg-0">
-					<div class="input-group-underlined input-group">
-						<input type="text" placeholder="Search" aria-label="Search"
-							class="form-control-underlined pl-3 form-control">
-						<div class="ml-0 input-group-append">
-							<button class="btn btn-underlined">
+<body>
 
-							</button>
-						</div>
+
+	<div id="wrapper">
+		<div class="top my-2">
+			<div class="d-none d-sm-flex justify-content-end">
+
+				<form>
+					<div class="form-group has-search">
+						<span class="fa fa-search form-control-feedback"></span>
+						<input type="text" class="form-control" placeholder="Start typing to search">
 					</div>
 				</form>
 
-				<div class="border-right px-3 dropdown">
+				<div class="dropdown">
+					<i class="fas fa-globe"></i>
 					<a href="#" id="langsDropdown" aria-haspopup="true" class="topbar-link dropdown-toggle"
 						aria-expanded="false">English</a>
 					<div tabindex="-1" role="menu" aria-labelledby="langsDropdown" aria-hidden="true"
@@ -42,8 +41,8 @@
 		</div>
 
 		<!--Navigation-->
-		<div class="">
-			<nav class="navbar navbar-expand-lg navbar-light text-white px-2 px-lg-5">
+		<div id="branding">
+			<nav class="navbar navbar-expand-lg navbar-light text-white px-2 px-lg-5 navbar-fixed">
 				<a class="navbar-brand" href="index.html">
 					<img src="images/site-logo.svg" alt="Playmatters" class="img-fluid" />
 				</a>
@@ -85,20 +84,19 @@
 								<h2 class="text-center text-white">Our PlayLibrary</h2>
 								<p class="text-center text-white">This library contains resources that can be used
 									in the learning through play adventure. These are
-									tailored at learners of various levels from early 
-									childhood, lower primary, and upper primary. 
+									tailored at learners of various levels from early
+									childhood, lower primary, and upper primary.
 									They can be used in early childhood development
 									centers, primary schools, alternative learning
-									centers, in the community, and at home!  </p>
+									centers, in the community, and at home! </p>
 							</div>
 							<div class="image-wrapper">
-								<img  src="images/tablet@2x.png" alt="image">
+								<img src="images/tablet@2x.png" alt="image">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 		</section>
 
 
@@ -111,92 +109,98 @@
 						<ul class="library-list p-0">
 							<li>
 								<h2 class="title text-white">Resources for educators</h2>
-								<div class="icon"><img src="images/for-educators.svg" alt="educators"></div>
+								<div class="icon"><img src="/images/for-educators.svg" alt="educators"></div>
 								<a href="#">Learn More</a>
 							</li>
 							<li>
 								<h2 class="title text-white">Resources for caregivers</h2>
-								<div class="icon"><img src="images/for-caregivers.svg" alt="educators"></div>
+								<div class="icon"><img src="/images/for-caregivers.svg" alt="educators"></div>
 								<a href="#">Learn More</a>
 							</li>
 							<li>
 								<h2 class="title text-white">Learning Platform</h2>
-								<div class="icon"><img src="images/learning-platform.svg" alt="educators"></div>
+								<div class="icon"><img src="/images/learning-platform.svg" alt="educators"></div>
 								<a href="#">Learn More</a>
 							</li>
 							<li>
 								<h2 class="title text-white">Resources for system actors</h2>
-								<div class="icon"><img src="images/for-system-actors.svg" alt="educators"></div>
+								<div class="icon"><img src="/images/for-system-actors.svg" alt="educators"></div>
 								<a href="#">Learn More</a>
 							</li>
-							
+
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		
-	
-		
 
-		<footer>
+
+		<footer class="mb-3">
 			<!-- footer menu-->
-			<section>
+			<section class="my-3 my-md-4">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							<img src="/images/footer-logo.svg" alt="playmatter">
+					<div class="row mx-md-4">
+						<div class="col-md-3 align-self-center">
+							<img src="images/footer-logo.svg" alt="playmatter" class="img-fluid">
 						</div>
-						<div class="col-md-3">
-							<h6>Uganda</h6>
-							<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-							<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-						</div>
-						<div class="col-md-3">
-							<h6>Ethiopia</h6>
-							<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-							<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-						</div>
-						<div class="col-md-3">
-							<h6>Tanzania</h6>
-							<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-							<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+						<div class="col-md-9">
+							<h4 class="my-4">Get in touch</h4>
+							<div class="row">
+								<div class="col-md mb-4">
+									<h6>Uganda</h6>
+									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+								</div>
+								<div class="col-md mb-4">
+									<h6>Ethiopia</h6>
+									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+								</div>
+								<div class="col-md mb-2 mb-md-4">
+									<h6>Tanzania</h6>
+									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- partner logos-->
-			<section>
-				<h5>In parthership with</h5>
-				<div class="partner-wrap">
-					<img src="/images/IRC.png" alt="international rescue committe" />
-					<img src="/images/ipa.png" alt="IPA" />
-					<img src="/images/war-child.png" alt="war child" />
-					<img src="/images/behavioral-insights.png" alt="behavioral" />
-					<img src="/images/plan-international.png" alt="plan" />
-					<img src="/images/lego-foundation.png" alt="Lego fondation" />
+			<section class="my-4 mx-md-5">
+				<h5 class="text-center my-2 my-md-4 fw-bold pb-4 pb-sm-0">In parthership with</h5>
+				<div class="partner-wrap d-md-flex justify-content-between">
+					<img src="images/IRC.png" alt="international rescue committe" class="img-fluid m-2 m-md-0" />
+					<img src="images/ipa.png" alt="IPA" class="img-fluid m-2 m-md-0" />
+					<img src="images/war-child.png" alt="war child" class="img-fluid m-2 m-md-0" />
+					<img src="images/behavioral-insights.png" alt="behavioral" class="img-fluid m-2 m-md-0" />
+					<img src="images/plan-international.png" alt="plan" class="img-fluid m-2 m-md-0" />
+					<img src="images/lego-foundation.png" alt="Lego fondation" class="img-fluid m-2 m-md-0" />
 				</div>
 
 			</section>
 			<!-- copyright -->
-			<section>
+			<section class="copyright text-center py-4 mt-5 position-relative mx-md-5">
 				<p>PlayMatters &copy; Copyright 2021, All Rights Reserved</p>
+				<a href="#" class="position-absolute back-to-top d-none d-md-inline-block">
+					<i class="fas fa-chevron-circle-up h2"></i>
+				</a>
 			</section>
 		</footer>
 
 
 	</div>
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+		integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+		integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
 		crossorigin="anonymous"></script>
-
+	<script src="/js/app.js"></script>
 </body>
 
 </html>

@@ -12,23 +12,22 @@
 	<title>About us - PlayMatters | Sparking lifelong learning through play</title>
 </head>
 
-<body id="page-node-about">
-	<div id="wrapper" class="container">
-		<div class="top">
-			<div class="d-none d-sm-flex justify-content-end col-sm-6 col-md-4">
-				<form class="d-lg-flex ml-auto mr-lg-5 mr-xl-6 my-4 my-lg-0">
-					<div class="input-group-underlined input-group">
-						<input type="text" placeholder="Search" aria-label="Search"
-							class="form-control-underlined pl-3 form-control">
-						<div class="ml-0 input-group-append">
-							<button class="btn btn-underlined">
+<body>
 
-							</button>
-						</div>
+
+	<div id="wrapper">
+		<div class="top my-2">
+			<div class="d-none d-sm-flex justify-content-end">
+
+				<form>
+					<div class="form-group has-search">
+						<span class="fa fa-search form-control-feedback"></span>
+						<input type="text" class="form-control" placeholder="Start typing to search">
 					</div>
 				</form>
 
-				<div class="border-right px-3 dropdown">
+				<div class="dropdown">
+					<i class="fas fa-globe"></i>
 					<a href="#" id="langsDropdown" aria-haspopup="true" class="topbar-link dropdown-toggle"
 						aria-expanded="false">English</a>
 					<div tabindex="-1" role="menu" aria-labelledby="langsDropdown" aria-hidden="true"
@@ -42,8 +41,8 @@
 		</div>
 
 		<!--Navigation-->
-		<div class="">
-			<nav class="navbar navbar-expand-lg navbar-light text-white px-2 px-lg-5">
+		<div id="branding">
+			<nav class="navbar navbar-expand-lg navbar-light text-white px-2 px-lg-5 navbar-fixed">
 				<a class="navbar-brand" href="index.html">
 					<img src="images/site-logo.svg" alt="Playmatters" class="img-fluid" />
 				</a>
@@ -83,19 +82,19 @@
 						<div class="wrapper-outer">
 							<div class="text-wrapper">
 								<h2 class="text-center text-white">The power of play </h2>
-								<p class="text-center text-white">Right from infancy, children have an amazing natural 
-									potential to learn about their environment through play. 
-									As they grow up in today’s dynamic and ever-changing world, 
-									it becomes more important for them to build holistic skills 
-									which can help them thrive in future.<br> 
-									For refugee and host community children whose education 
-									and social development has been affected by crisis, 
-									the need for positive experiences and coping skills 
-									that can counterbalance negative factors in 
+								<p class="text-center text-white">Right from infancy, children have an amazing natural
+									potential to learn about their environment through play.
+									As they grow up in today’s dynamic and ever-changing world,
+									it becomes more important for them to build holistic skills
+									which can help them thrive in future.<br>
+									For refugee and host community children whose education
+									and social development has been affected by crisis,
+									the need for positive experiences and coping skills
+									that can counterbalance negative factors in
 									their lives is critical. </p>
 							</div>
 							<div class="image-wrapper">
-								<img  src="images/about-top@2x.png" alt="image">
+								<img src="images/about-top@2x.png" alt="image">
 							</div>
 						</div>
 					</div>
@@ -103,23 +102,27 @@
 				<div class="row">
 					<div class="col-md-9 offset-md-1">
 						<h2>A methodology of teaching and healing</h2>
-						<p class="text-white">The PlayMatters initiative reimagines childhood for 800,000+ refugee and host community children aged
-							2+ across Uganda, Ethiopia, Tanzania whose education and social development has been affected by 
-							displacement and trauma. Building on the amazing resilience of children, PlayMatters is helping to 
-							cultivate holistic learning through play for children aged of 3-12+ for them to bounce back, recover, 
+						<p class="text-white">The PlayMatters initiative reimagines childhood for 800,000+ refugee and host
+							community children aged
+							2+ across Uganda, Ethiopia, Tanzania whose education and social development has been affected by
+							displacement and trauma. Building on the amazing resilience of children, PlayMatters is helping to
+							cultivate holistic learning through play for children aged of 3-12+ for them to bounce back, recover,
 							learn, and thrive.</p>
 
-						<p class="text-white">PlayMatters is being implemented by a consortium led by the International Rescue Committee, and 
-							includes Plan International, War Child Holland, Innovations for Poverty Action, the Behavioural 
+						<p class="text-white">PlayMatters is being implemented by a consortium led by the International Rescue
+							Committee, and
+							includes Plan International, War Child Holland, Innovations for Poverty Action, the Behavioural
 							Insights Team in Partnership with the LEGO Foundation. </p>
 
 						<h2>Why learn through play? </h2>
-						<p class="text-white">For PlayMatters, learning through play is a methodology for enhancing children’s cognitive, social, 
-							creative, emotional, and physical skills. This is through the integration of child-centered and 
-							play-based interactions into early childhood development centers, primary schools, homes, 
+						<p class="text-white">For PlayMatters, learning through play is a methodology for enhancing children’s
+							cognitive, social,
+							creative, emotional, and physical skills. This is through the integration of child-centered and
+							play-based interactions into early childhood development centers, primary schools, homes,
 							and communities. </p>
-						<p>Learn more about the power and characteristics of learning through play: 
-							<br>https://www.legofoundation.com/en/why-play/ </p>	
+						<p>Learn more about the power and characteristics of learning through play:
+							<br>https://www.legofoundation.com/en/why-play/
+						</p>
 
 					</div>
 				</div>
@@ -129,64 +132,72 @@
 	
 		
 
-		<footer>
+		<footer class="mb-3">
 			<!-- footer menu-->
-			<section>
+			<section class="my-3 my-md-4">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							<img src="/images/footer-logo.svg" alt="playmatter">
+					<div class="row mx-md-4">
+						<div class="col-md-3 align-self-center">
+							<img src="images/footer-logo.svg" alt="playmatter" class="img-fluid">
 						</div>
-						<div class="col-md-3">
-							<h6>Uganda</h6>
-							<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-							<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-						</div>
-						<div class="col-md-3">
-							<h6>Ethiopia</h6>
-							<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-							<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-						</div>
-						<div class="col-md-3">
-							<h6>Tanzania</h6>
-							<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-							<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+						<div class="col-md-9">
+							<h4 class="my-4">Get in touch</h4>
+							<div class="row">
+								<div class="col-md mb-4">
+									<h6>Uganda</h6>
+									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+								</div>
+								<div class="col-md mb-4">
+									<h6>Ethiopia</h6>
+									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+								</div>
+								<div class="col-md mb-2 mb-md-4">
+									<h6>Tanzania</h6>
+									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- partner logos-->
-			<section>
-				<h5>In parthership with</h5>
-				<div class="partner-wrap">
-					<img src="/images/IRC.png" alt="international rescue committe" />
-					<img src="/images/ipa.png" alt="IPA" />
-					<img src="/images/war-child.png" alt="war child" />
-					<img src="/images/behavioral-insights.png" alt="behavioral" />
-					<img src="/images/plan-international.png" alt="plan" />
-					<img src="/images/lego-foundation.png" alt="Lego fondation" />
+			<section class="my-4 mx-md-5">
+				<h5 class="text-center my-2 my-md-4 fw-bold pb-4 pb-sm-0">In parthership with</h5>
+				<div class="partner-wrap d-md-flex justify-content-between">
+					<img src="images/IRC.png" alt="international rescue committe" class="img-fluid m-2 m-md-0" />
+					<img src="images/ipa.png" alt="IPA" class="img-fluid m-2 m-md-0" />
+					<img src="images/war-child.png" alt="war child" class="img-fluid m-2 m-md-0" />
+					<img src="images/behavioral-insights.png" alt="behavioral" class="img-fluid m-2 m-md-0" />
+					<img src="images/plan-international.png" alt="plan" class="img-fluid m-2 m-md-0" />
+					<img src="images/lego-foundation.png" alt="Lego fondation" class="img-fluid m-2 m-md-0" />
 				</div>
 
 			</section>
 			<!-- copyright -->
-			<section>
+			<section class="copyright text-center py-4 mt-5 position-relative mx-md-5">
 				<p>PlayMatters &copy; Copyright 2021, All Rights Reserved</p>
+				<a href="#" class="position-absolute back-to-top d-none d-md-inline-block">
+					<i class="fas fa-chevron-circle-up h2"></i>
+				</a>
 			</section>
 		</footer>
 
 
 	</div>
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+		integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-		integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+		integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
 		crossorigin="anonymous"></script>
-
+	<script src="/js/app.js"></script>
 </body>
 
 </html>
