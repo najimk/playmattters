@@ -43,10 +43,11 @@
 */
 
 :root {
+	--white: #fff;
 	--blue-color: #1b6bea;
 	--orange-color: #ff5300;
 	--light-green-color: #0fe88a;
-	--yellow-color: #dea813;
+	--yellow-color: #FFC038;
 	--educator-bg: #ff8757;
 	--gray-backgound: #c3c3c3;
 	--light-gray-background: #f2f2f2;
@@ -475,6 +476,19 @@ footer p > span {
 
 .library-list li:nth-child(4) {
 	background-image: url("../images/l4@2x.png");
+}
+
+#page-node-about .navbar{
+	background-color: var(--educator-bg);
+}
+
+#page-node-our-stories .intro-wrapper,
+#page-node-our-stories .navbar{
+	background-color: #f1f1f1;
+}
+
+#content-Wrapper{
+	background-color: white;
 }
 
 /* Small devices (landscape phones, 576px and up */
