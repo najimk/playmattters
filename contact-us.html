@@ -84,7 +84,9 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63836.00584276196!2d32.597606368248954!3d0.3344051366797249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1630050551869!5m2!1sen!2sug" width="1320" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63836.00584276196!2d32.597606368248954!3d0.3344051366797249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1630050551869!5m2!1sen!2sug"
+							width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</div>
 			</div>
@@ -101,9 +103,9 @@
 						<ul>
 							<li>
 								<h3>Uganda</h3>
-								<p>Plot 8, Lower Naguru East Road,<br> 
+								<p>Plot 8, Lower Naguru East Road,<br>
 									Kampala, Uganda<br>
-									Tel: +256 (0) 394 822 224,<br> 
+									Tel: +256 (0) 394 822 224,<br>
 									+256 (0) 200 900 697<br>
 									Email: info@playmatters.ug</p>
 							</li>
@@ -126,82 +128,102 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
 				<div class="row">
-					<div class="col-md-9">
-						<form action="" method="post">
-							<div class="field">
-								<label for="name" class="label is-size-4 has-text-weight-light"></label>
-								<div class="control has-icons-left">
-									<input type="text" name="name" id="name" class="input" placeholder="Full Name" autofocus>
-										<span class="icon is-left">
-											<i class="fa fa-user"></i>
-										</span>
+					<form role="form" id="contact-form" class="contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
 								</div>
 							</div>
-							<div class="field">
-								<label for="email" class="label is-size-4 has-text-weight-light"></label>
-								<div class="control has-icons-left">
-									<input type="email" name="email" id="email" class="input" placeholder="Email">
-										<span class="icon is-left">
-											<i class="fa fa-envelope"></i>
-										</span>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" autocomplete="off" id="email"
+										placeholder="E-mail">
 								</div>
 							</div>
-							<div class="field">
-								<label for="subject" class="label is-size-4 has-text-weight-light"></label>
-								<div class="control has-icons-left">
-									<input type="email" name="subject" id="subject" class="input" placeholder="Subject">
-										<span class="icon is-left">
-											<i class="fa fa-envelope"></i>
-										</span>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="subject" class="form-control" name="subject" autocomplete="off" id="subject"
+										placeholder="Subject">
 								</div>
 							</div>
-							<div class="field">
-								<label for="message" class="label is-size-4 has-text-weight-light"></label>
-								<textarea name="message" id="message" rows="5" class="textarea is-medium" placeholder="Message"></textarea>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea class="form-control textarea" rows="3" name="Message" id="Message"
+										placeholder="Message"></textarea>
+								</div>
 							</div>
-							<button type="submit" class="button is-success is-size-5">Send</button>
-						</form>
-					</div>
-					<div class="col-md-3">
-						<h2>You can also write to us</h2>
-					</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<button type="submit" class="btn main-btn pull-right">Send <span><i
+											class="fas fa-paper-plane"></i></span></button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
+		</section>
+
+		<!-- Join our community -->
+		<section id="orange-region" class="py-5">
+			<div class="community text-center text-white">
+				<span class="h5 text-uppercase fw-bold comm d-block d-md-inline-block">Join our community</span>
+
+				<a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
+				<a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+				<a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
+				<a href="https://linkedin.com"> <i class="fab fa-linkedin-in"></i> </a>
+				<a href="https://youtube.com"> <i class="fab fa-youtube"></i> </a>
+
+			</div>
+
 		</section>
 
 
 		<footer class="mb-3">
 			<!-- footer menu-->
 			<section class="my-3 my-md-4">
-				<div class="container">
-					<div class="row mx-md-4">
-						<div class="col-md-3 align-self-center">
-							<img src="images/footer-logo.svg" alt="playmatter" class="img-fluid">
-						</div>
-						<div class="col-md-9">
-							<h4 class="my-4">Get in touch</h4>
-							<div class="row">
-								<div class="col-md mb-4">
-									<h6>Uganda</h6>
-									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-								</div>
-								<div class="col-md mb-4">
-									<h6>Ethiopia</h6>
-									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-								</div>
-								<div class="col-md mb-2 mb-md-4">
-									<h6>Tanzania</h6>
-									<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
-									<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
-								</div>
-							</div>
 
+				<div class="row mx-2 mx-md-5">
+					<div class="d-none d-lg-block col-lg-3 align-self-center">
+						<img src="images/footer-logo.svg" alt="playmatter" class="img-fluid">
+					</div>
+					<div class="col-12 col-lg-9">
+						<h4 class="my-4">Get in touch</h4>
+						<div class="row">
+							<div class="col-md mb-4">
+								<h6>Uganda</h6>
+								<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+								<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+							</div>
+							<div class="col-md mb-4">
+								<h6>Ethiopia</h6>
+								<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+								<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+							</div>
+							<div class="col-md mb-2 mb-md-4">
+								<h6>Tanzania</h6>
+								<p><span><i class="fas fa-phone-alt"></i></span>+256 414 123 456</p>
+								<p><span><i class="fas fa-envelope"></i></span> Example Physical Address</p>
+							</div>
 						</div>
+
 					</div>
 				</div>
+
 			</section>
 			<!-- partner logos-->
 			<section class="my-4 mx-md-5">
