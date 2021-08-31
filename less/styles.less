@@ -1034,6 +1034,7 @@ footer p > span {
 
 			li.sky-list-item{
 				display: block;
+				position: relative;
 				overflow: visible;
 				height: auto;
 				margin-bottom: 9.09091vw;
@@ -1041,6 +1042,10 @@ footer p > span {
 
 				a{
 					text-decoration: none;
+
+					@media (min-width: 768px){
+						display: flex;
+					}
 				}
 
 				.sky-crop{
@@ -1059,6 +1064,18 @@ footer p > span {
 						height: 100%;
 						width: 100%;
 					}
+
+					@media (min-width: 768px){
+						order: 2;
+						width: 36.273vw;
+						max-height: 36.273vw;
+					}
+
+					@media (min-width: 992px){
+						width: 32.64vw;
+						height: 26.39vw;
+						margin-right: 100px;
+					}
 				}
 
 				.list-item-info{
@@ -1067,11 +1084,56 @@ footer p > span {
 
 					h2{
 						margin-bottom: 15px;
+
+						@media (min-width: 992px){
+							margin-bottom: 28px;
+						}
 					}
 
 					p{
 						margin-bottom: 0;
 					}
+
+					@media (min-width: 768px){
+						order: 1;
+						padding-right: 100px;
+					}
+
+					@media (min-width: 992px){
+						padding: 80px 115px;
+					}
+				}
+
+				@media (min-width: 768px){
+					margin-bottom: 4.54545vw;
+				}
+
+				@media (min-width: 992px){
+					max-width: 82.2899vw;
+				}
+
+				&:nth-child(even){
+					@media (min-width: 992px){
+						right: -64px; 
+
+						.list-item-info{
+							order: 2;
+							padding: 80px 115px 80px 34px;
+						}
+	
+						.sky-crop{
+							order: 1;
+							margin-left: 100px;
+							margin-right: 0;
+						}
+					}
+
+
+					
+				}
+
+				&:nth-child(odd){
+					left: -10px;
 				}
 			}
 		}
