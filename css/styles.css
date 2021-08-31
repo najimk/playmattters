@@ -1028,3 +1028,6 @@ footer p > span {
 #page-node-our-stories #content-Wrapper ul li.sky-list-item:nth-child(odd) {
   left: -10px;
 }
+#page-node-our-stories #content-Wrapper ul li.sky-list-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
