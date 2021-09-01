@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@100;200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Poppins:wght@100;200;300;400;600&display=swap');
 
 @font-face {
 	font-family: "OC Format Collage D6";
@@ -875,7 +875,7 @@ footer p > span {
 
 #page-node-our-stories .intro-wrapper,
 #page-node-our-stories .navbar {
-	background-color: #f1f1f1;
+	background-color: var(--gray-backgound);
 }
 
 #content-Wrapper {
@@ -1015,17 +1015,54 @@ footer p > span {
 
 
 #page-node-our-stories{
+	#navbarNav{
+		ul{
+			li{
+				&.active{
+					color: #FF5300
+				}
+				a{
+					color: #011C44;
+
+					&:hover{
+						color: #FF5300;
+						border-bottom: 2px solid #ff5300;
+					}
+				}
+			}
+		}
+	}
+
 	.intro-wrapper{
-		padding: 15px 0;
+		padding: 40px 0;
+
+		@media (min-width: 992px){
+			padding: 130px 0 80px;
+		}
 
 		h2{
 			color: #FF5300;
 			padding-bottom: 10px;
+
+			@media (min-width: 992px){
+				margin-bottom: 40px;
+			}
+		}
+
+		.card{
+			@media (min-width: 992px){
+				max-width: 870px;
+				height: auto;
+			}
 		}
 	}
 
 	#content-Wrapper{
 		padding: 40px 0;
+
+		@media (min-width: 992px){
+			padding: 80px 0;
+		}
 
 		ul{
 			display: block;
@@ -1136,6 +1173,216 @@ footer p > span {
 
 				&:nth-last-child(1){
 					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+#page-node-publications{
+	.navbar{
+		background-color: var(--gray-backgound);
+	}
+
+	#navbarNav{
+		ul{
+			li{
+				&.active{
+					color: #FF5300
+				}
+				a{
+					color: #011C44;
+
+					&:hover{
+						color: #FF5300;
+						border-bottom: 2px solid #ff5300;
+					}
+				}
+			}
+		}
+	}
+
+	.intro-wrapper{
+		background-color: var(--gray-backgound);
+		padding: 40px 0;
+
+		h2{
+			color: #ff5300;
+			padding-bottom: 10px;
+		}
+
+		.card{
+			h3{
+				color: #fff;
+				margin: 0;
+			}
+
+			span{
+				padding: 0;
+				background: none;
+				color: #00EB88;
+			}
+		}
+
+		ul{
+			display: block;
+			margin: 0;
+			padding: 40px 0 0 0;
+
+			li.sky-list-item{
+				display: block;
+				position: relative;
+				overflow: visible;
+				height: auto;
+				margin-bottom: 9.09091vw;
+				background-color: #355B98;
+
+				a{
+					text-decoration: none;
+
+					@media (min-width: 768px){
+						display: flex;
+					}
+				}
+
+				.sky-crop{
+					width: 77.27273vw;
+					max-height: 55.27273vw;
+					margin-left: -4.54545vw;
+					flex-shrink: 0;
+					height: auto;
+					align-self: stretch;
+					position: relative;
+					overflow: hidden;
+
+					img{
+						object-fit: cover;
+						object-position: left 64.5% top 25.25%;
+						height: 100%;
+						width: 100%;
+					}
+
+					@media (min-width: 768px){
+						order: 2;
+						width: 36.273vw;
+						max-height: 36.273vw;
+					}
+
+					@media (min-width: 992px){
+						width: 32.64vw;
+						height: 26.39vw;
+					}
+				}
+
+				.list-item-info{
+					padding: 2em;
+					color: #fff;
+
+					h2{
+						margin-bottom: 15px;
+						color: #fff;
+
+						@media (min-width: 992px){
+							margin-bottom: 28px;
+						}
+					}
+
+					p{
+						margin-bottom: 0;
+					}
+
+					@media (min-width: 992px){
+						padding: 4em;
+					}
+
+					
+				}
+
+				@media (min-width: 768px){
+					margin-bottom: 4.54545vw;
+					display: grid;
+					grid-template-columns: 2fr 1fr;
+					grid-column-gap: 1em;
+				}
+
+				@media (min-width: 992px){
+					max-width: 82.2899vw;
+					grid-column-gap: 4em;
+				}
+
+				&:nth-last-child(1){
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	#content-Wrapper{
+		padding: 40px 0;
+
+		h2{
+			color: #FF5300;
+			margin-bottom: 30px;
+		}
+
+		h4{
+			font-family: "Poppins", sans-serif;
+			color: #011C44;
+			margin-bottom: 15px;
+
+			@media (min-width: 992px){
+				margin-bottom: 30px;
+			}
+		}
+
+		ul{
+			display: grid;
+			grid-row-gap: 1.5em;
+
+			@media (min-width: 768px){
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-column-gap: 1.5rem;
+				grid-row-gap: 2rem;
+			}
+
+			@media (min-width: 992px){
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				margin-bottom: 80px !important;
+			}
+
+			li{
+				padding: 0;
+				border: none;
+
+				img{
+					width: 100%;
+					height: auto;
+					margin-bottom: 20px;
+				}
+
+				p.title{
+					font-weight: 600;
+					color: #011C44;
+
+					@media (min-width: 768px){
+						min-height: 72px;
+					}
+				}
+
+				a{
+					text-decoration: none;
+					color: #011c44;
+					margin-right: 20px;
+					border-bottom: 3px solid;
+
+					&.view{
+						border-color: #FEA813;
+					}
+
+					&.download{
+						border-color: #0fe88a;
+					}
 				}
 			}
 		}
