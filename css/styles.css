@@ -1208,6 +1208,26 @@ footer p > span {
 #page-node-publications .intro-wrapper ul li.sky-list-item:nth-last-child(1) {
   margin-bottom: 0;
 }
+#page-node-publications .intro-wrapper ul.side-nav {
+  list-style: none;
+  padding: 0;
+}
+#page-node-publications .intro-wrapper ul.side-nav li {
+  background-color: #FF8757;
+  padding: 1em 2em;
+}
+#page-node-publications .intro-wrapper ul.side-nav li:nth-child(1) {
+  padding-top: 2em;
+}
+#page-node-publications .intro-wrapper ul.side-nav li:nth-last-child(1) {
+  padding-bottom: 2em;
+}
+#page-node-publications .intro-wrapper ul.side-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 120%;
+  font-weight: 600;
+}
 #page-node-publications #content-Wrapper {
   padding: 40px 0;
 }
