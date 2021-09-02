@@ -1292,3 +1292,15 @@ footer p > span {
 #page-node-publications #content-Wrapper ul li a.download {
   border-color: #0fe88a;
 }
+@media (min-width: 992px) {
+  #page-node-play-library .intro-wrapper .text-wrapper {
+    width: 60%;
+    height: auto;
+    margin: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  #page-node-play-library .intro-wrapper .image-wrapper {
+    margin-right: 45px;
+  }
+}
