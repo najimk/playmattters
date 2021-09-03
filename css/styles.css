@@ -1304,3 +1304,6 @@ footer p > span {
     margin-right: 45px;
   }
 }
+#page-node-news-article .intro-wrapper {
+  background: #f1f1f1;
+}
