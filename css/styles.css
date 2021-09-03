@@ -1338,6 +1338,11 @@ footer p > span {
 #page-node-news-article .intro-wrapper .featured-image {
   margin-bottom: 2em;
 }
+@media (min-width: 992px) {
+  #page-node-news-article .intro-wrapper .featured-image {
+    margin-bottom: 4em;
+  }
+}
 #page-node-news-article .intro-wrapper .featured-image img {
   width: 100%;
   height: auto;
